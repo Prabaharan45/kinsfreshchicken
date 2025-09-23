@@ -1,16 +1,40 @@
 .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   width: 100%;
-  height: 100vh; /* Full screen height */
-  overflow: hidden;
+  background-color: #fff;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-.video-container {
+.image-container {
   width: 100%;
-  height: 100%;
+  max-width: 900px;
+  text-align: center;
 }
 
-.video-container video {
+.home-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Fill screen, looks good on all devices */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: none; /* hide by default */
+}
+
+/* Desktop view: show desktop image */
+@media (min-width: 769px) {
+  .desktop-image {
+    display: block;
+  }
+}
+
+/* Mobile view: show mobile image */
+@media (max-width: 768px) {
+  .mobile-image {
+    display: block;
+    border-radius: 5px;
+  }
 }

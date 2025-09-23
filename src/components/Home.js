@@ -1,14 +1,16 @@
 import React from "react";
 import "./Home.css";
+import chickenDesktop from "../assets/chicken1.jpg";
+import chickenMobile from "../assets/chicken.jpg";
 
 function Home() {
   return (
     <div className="home">
-      <div className="video-container">
-        <video autoPlay muted loop playsInline>
-          <source src="/chicken1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="image-container">
+        {/* Desktop image */}
+        <img src={chickenDesktop} alt="Chicken Desktop" className="home-image desktop-image" />
+        {/* Mobile image */}
+        <img src={chickenMobile} alt="Chicken Mobile" className="home-image mobile-image" />
       </div>
     </div>
   );
