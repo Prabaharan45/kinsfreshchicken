@@ -8,7 +8,7 @@ function Deals() {
   const offers = [
     {
       title: "Buy 1kg Chicken, Get 1kg Onion Free 🧅🍗",
-      desc: "Kick off our inaugural offer – grab 1kg chicken and take home 1kg onions at no extra cost!",
+      desc: "Kick off our inaugural offer – Grab 1kg chicken and take home 1kg onions at no extra cost!",
       img: wingsDealImg,
     },
     {
