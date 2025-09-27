@@ -11,9 +11,9 @@ import dish4 from "../assets/gizzard.jpg";
 function Home() {
   const dishes = [
     { img: dish1, name: "Skinless Chicken", price: "₹260 / kg" },
-    { img: dish2, name: "Chicken Liver", price: "₹99 / kg" },
-    { img: dish3, name: "Chicken Drumstick", price: "₹320 / kg" },
-    { img: dish4, name: "Chicken Gizzard", price: "₹150 / kg" },
+    { img: dish2, name: "Liver", price: "₹99 / kg" },
+    { img: dish3, name: "Drumstick", price: "₹320 / kg" },
+    { img: dish4, name: "Gizzard", price: "₹150 / kg" },
   ];
 
   const [formData, setFormData] = useState({

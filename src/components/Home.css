@@ -50,17 +50,16 @@
 }
 
 .hero-buttons .btn {
-  padding: 0.8rem 2.5rem;
+  padding: 0.6rem 2rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 50px;
   transition: all 0.3s ease;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Primary - Order Now */
 .hero-buttons .btn-primary {
   background: linear-gradient(45deg, #D72638, #FF3C4A);
   color: #fff;
@@ -68,11 +67,10 @@
 }
 
 .hero-buttons .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Secondary - View Menu */
 .hero-buttons .btn-secondary {
   background: #fff;
   color: #D72638;
@@ -81,7 +79,7 @@
 
 .hero-buttons .btn-secondary:hover {
   background: #f4f4f4;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 /* About Section */
@@ -99,7 +97,8 @@
   width: 100%;
   height: auto;
   max-height: 450px;
-  object-fit: cover;
+  object-fit: contain; /* ✅ contain ensures full image is visible */
+  display: block;
 }
 
 .about-text {
@@ -155,8 +154,7 @@
 .menu-card img {
   width: 100%;
   height: auto;
-  max-height: 220px;
-  object-fit: cover;
+  object-fit: contain; /* ✅ keeps image fully visible */
   display: block;
 }
 
@@ -173,6 +171,11 @@
   color: #D72638;
   font-weight: 600;
   margin-bottom: 0.5rem;
+}
+
+.menu-info .btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.95rem;
 }
 
 /* Why Choose Kin */
@@ -252,25 +255,31 @@
 @media(max-width:768px){
   .about-section { flex-direction: column; }
   .contact-grid { grid-template-columns: 1fr; }
-  .hero-section { height: 70vh; }
-  .hero-content h1 { font-size: 2.5rem; }
+  .hero-section { height: 65vh; }
+  .hero-content h1 { font-size: 2.2rem; }
   .hero-content p { font-size: 1rem; }
   .menu-grid { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr; }
   .about-image { max-height: 280px; }
   .menu-card img { max-height: 180px; }
+  .hero-buttons .btn {
+    padding: 0.45rem 1.5rem;
+    font-size: 0.95rem;
+  }
 }
 
 @media(max-width:480px){
-  .hero-section { height: 60vh; }
+  .hero-section { height: 55vh; }
   .about-image { max-height: 220px; }
   .menu-card img { max-height: 160px; }
   .hero-buttons {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
   .hero-buttons .btn {
     width: 100%;
     text-align: center;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
