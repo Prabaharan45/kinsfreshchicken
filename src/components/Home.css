@@ -2,6 +2,9 @@
 .home {
   font-family: 'Poppins', sans-serif;
   color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Hero Section */
@@ -28,6 +31,7 @@
 .hero-content {
   text-align: center;
   color: #fff;
+  padding: 0 1rem;
 }
 
 .hero-content h1 {
@@ -97,7 +101,7 @@
   width: 100%;
   height: auto;
   max-height: 450px;
-  object-fit: contain; /* ✅ contain ensures full image is visible */
+  object-fit: contain;
   display: block;
 }
 
@@ -109,6 +113,11 @@
   font-size: 2.5rem;
   color: #D72638;
   margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .about-values {
@@ -123,6 +132,7 @@
   padding: 0.5rem 1rem;
   border-radius: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 /* Menu Preview */
@@ -149,17 +159,22 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-card img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* ✅ keeps image fully visible */
+  object-fit: contain;
+  max-height: 220px;
   display: block;
 }
 
 .menu-info {
   padding: 1rem;
+  text-align: center;
 }
 
 .menu-info h3 {
@@ -176,6 +191,7 @@
 .menu-info .btn {
   padding: 0.5rem 1.5rem;
   font-size: 0.95rem;
+  border-radius: 30px;
 }
 
 /* Why Choose Kin */
@@ -203,6 +219,7 @@
   font-weight: 600;
   font-size: 1.2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .feature-card:hover {
@@ -252,6 +269,12 @@
 }
 
 /* Responsive */
+@media(max-width:1024px){
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content p { font-size: 1.2rem; }
+  .about-image { max-height: 400px; }
+}
+
 @media(max-width:768px){
   .about-section { flex-direction: column; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -282,4 +305,39 @@
     padding: 0.4rem 1.2rem;
     font-size: 0.9rem;
   }
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 0.9rem; }
+  .menu-info h3 { font-size: 1rem; }
+  .menu-info p { font-size: 0.9rem; }
+}
+/* General button styles (assuming you already have .btn styles) */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Great Deals button */
+.btn-highlight {
+  background: linear-gradient(135deg, #ff4d4d, #ff001e);
+  color: #fff;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(255, 77, 77, 0.4);
+}
+
+.btn-highlight:hover {
+  background: linear-gradient(135deg, #bc1e1e, #e6002e);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(255, 77, 77, 0.6);
+}
+
+/* For placement when multiple buttons are side by side */
+.hero-buttons .btn,
+.menu-cta .btn {
+  margin: 0 8px;
 }

@@ -10,7 +10,7 @@ import dish4 from "../assets/gizzard.jpg";
 
 function Home() {
   const dishes = [
-    { img: dish1, name: "Skinless Chicken", price: "₹260 / kg" },
+   
     { img: dish2, name: "Liver", price: "₹99 / kg" },
     { img: dish3, name: "Drumstick", price: "₹320 / kg" },
     { img: dish4, name: "Gizzard", price: "₹150 / kg" },
@@ -70,6 +70,9 @@ function Home() {
               </button>
               <a href="/menu" className="btn btn-secondary">
                 View Menu
+              </a>
+              <a href="/deals" className="btn btn-highlight">
+                Great Deals
               </a>
             </div>
           </motion.div>
@@ -134,6 +137,9 @@ function Home() {
         <div className="menu-cta">
           <a href="/menu" className="btn btn-primary">
             View Full Menu
+          </a>
+          <a href="/deals" className="btn btn-highlight">
+            Great Deals
           </a>
         </div>
       </section>
