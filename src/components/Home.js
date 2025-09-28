@@ -3,14 +3,12 @@ import "./Home.css";
 import { motion } from "framer-motion";
 import heroImage from "../assets/chicken.jpg";
 import aboutImage from "../assets/logo.jpg";
-import dish1 from "../assets/skinless.jpg";
 import dish2 from "../assets/liver.jpg";
 import dish3 from "../assets/drumstick.jpg";
 import dish4 from "../assets/gizzard.jpg";
 
 function Home() {
   const dishes = [
-   
     { img: dish2, name: "Liver", price: "₹99 / kg" },
     { img: dish3, name: "Drumstick", price: "₹320 / kg" },
     { img: dish4, name: "Gizzard", price: "₹150 / kg" },
@@ -65,15 +63,53 @@ function Home() {
             className="hero-content"
           >
             <div className="hero-buttons">
-              <button onClick={handleOrderNow} className="btn btn-primary">
+              {/* Order Now Button - comes from left */}
+              <motion.button
+                onClick={handleOrderNow}
+                className="btn btn-primary"
+                initial={{ x: -200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+                animate={{
+                  y: [0, -10, 0],
+                  transition: { repeat: Infinity, duration: 3 },
+                }}
+              >
                 Order Now
-              </button>
-              <a href="/menu" className="btn btn-secondary">
+              </motion.button>
+
+              {/* View Menu Button - comes from top */}
+              <motion.a
+                href="/menu"
+                className="btn btn-secondary"
+                initial={{ y: -200, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                whileHover={{ scale: 1.1 }}
+                animate={{
+                  y: [0, -10, 0],
+                  transition: { repeat: Infinity, duration: 3, delay: 0.5 },
+                }}
+              >
                 View Menu
-              </a>
-              <a href="/deals" className="btn btn-highlight">
+              </motion.a>
+
+              {/* Great Deals Button - comes from right */}
+              <motion.a
+                href="/deals"
+                className="btn btn-highlight"
+                initial={{ x: 200, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.6 }}
+                whileHover={{ scale: 1.1 }}
+                animate={{
+                  y: [0, -10, 0],
+                  transition: { repeat: Infinity, duration: 3, delay: 1 },
+                }}
+              >
                 Great Deals
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         </div>
