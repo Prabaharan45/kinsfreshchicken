@@ -331,7 +331,7 @@
 }
 
 .btn-highlight:hover {
-  background: linear-gradient(135deg, #bc1e1e, #e6002e);
+  background: linear-gradient(135deg, #5f1d1d, #e6002e);
   transform: translateY(-2px);
   box-shadow: 0px 6px 12px rgba(255, 77, 77, 0.6);
 }
