@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
-import heroImage from "../assets/chicken.jpg";
+import heroImage from "../assets/chicken1.jpg";
 import aboutImage from "../assets/logo.jpg";
 import dish1 from "../assets/skinless.jpg";
 import dish2 from "../assets/liver.jpg";
