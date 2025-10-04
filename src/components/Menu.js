@@ -23,20 +23,20 @@ function Menu() {
   const chickens = [
     { name: "With Skin", price: "₹230 / 1kg", img: withskinImg },
     { name: "Skinless", price: "₹260 / 1kg", img: skinlessImg },
-    { name: "Breast Boneless", price: "₹360 / 1kg", img: breastbonelessImg },
+    { name: "Breast Boneless", price: "₹350 / 1kg", img: breastbonelessImg },
     { name: "Leg Boneless", price: "₹360 / 1kg", img: legbonelessImg },
-    { name: "Tandoori", price: "₹300 / 1kg", img: tandooriImg },
-    { name: "Wing Tips", price: "₹220 / 1kg", img: wingtipsImg },
+    { name: "Tandoori", price: "₹250 / 1kg", img: tandooriImg },
+    { name: "Wing Tips", price: "₹120 / 1kg", img: wingtipsImg },
     { name: "Drumstick", price: "₹320 / 1kg", img: drumstickImg },
     { name: "Lollypop", price: "₹320/ 1kg", img: lollypopImg },
     { name: "Whole Leg", price: "₹320 / 1kg", img: wholelegImg },
-    { name: "Winglets", price: "₹260/ 1kg", img: wingletsImg },
+    { name: "Wings", price: "₹260/ 1kg", img: wingletsImg },
     { name: "Gizzard", price: "₹150/ 1kg", img: gizzardImg },
-    { name: "Liver", price: "₹99/ 1kg", img: liverImg },
-    { name: "Chicken Mince", price: "₹310 / 1kg", img: chickenminceImg },
-    { name: "Janata", price: "₹55 / 1kg", img: janataImg },
+    { name: "Liver", price: "₹100/ 1kg", img: liverImg },
+    { name: "Chicken Mince", price: "₹350 / 1kg", img: chickenminceImg },
+    { name: "Janata", price: "₹50 / 1kg", img: janataImg },
     { name: "Pet Feast", price: "₹60 / 1kg", img: petfeastImg },
-    { name: "Egg", price: "₹10 / piece", img: eggImg },
+    { name: "Egg", price: "₹6/ piece", img: eggImg },
   ];
 
   const handleBuy = (item) => {
