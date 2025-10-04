@@ -11,7 +11,7 @@ import dish4 from "../assets/gizzard.jpg";
 function Home() {
   const dishes = [
    
-    { img: dish2, name: "Liver", price: "₹99 / kg" },
+    { img: dish2, name: "Liver", price: "₹100 / kg" },
     { img: dish3, name: "Drumstick", price: "₹320 / kg" },
     { img: dish4, name: "Gizzard", price: "₹150 / kg" },
   ];
