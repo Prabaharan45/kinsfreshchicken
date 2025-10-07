@@ -36,7 +36,7 @@ function Menu() {
     { name: "Chicken Mince", price: "₹350 / 1kg", img: chickenminceImg },
     { name: "Janata", price: "₹50 / 1kg", img: janataImg },
     { name: "Pet Feast", price: "₹60 / 1kg", img: petfeastImg },
-    { name: "Egg", price: "₹6/ piece", img: eggImg },
+    { name: "Egg", price: "₹6.50/ piece", img: eggImg },
   ];
 
   const handleBuy = (item) => {
@@ -45,7 +45,7 @@ function Menu() {
     );
     if (confirmPurchase) {
       const whatsappNumber = "8867006884"; // replace with your WhatsApp number
-      const message = `Hi! I want to order: ${item.name} (${item.price})`;
+      const message = `Hi! I want to order`;
       const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         message
       )}`;
