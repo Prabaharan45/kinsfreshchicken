@@ -31,7 +31,7 @@ function Deals() {
 
   const handleOrder = (dealTitle) => {
     const whatsappNumber = "8867006884"; // replace with your WhatsApp number
-    const message = `Hi! I want to order: ${dealTitle}`;
+    const message = `Hi! I want to order`;
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       message
     )}`;
