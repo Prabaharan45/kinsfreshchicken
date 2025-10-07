@@ -34,7 +34,7 @@ function Home() {
 
   const handleOrderNow = () => {
     const whatsappNumber = "8867006884";
-    const text = "Hello, I need  Fresh Chicken.";
+    const text = "Hello, I want to order";
     window.open(
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
       "_blank"
@@ -43,7 +43,7 @@ function Home() {
 
   const handleBuyNow = (dish) => {
     const whatsappNumber = "8867006884";
-    const text = `Hello, I want to buy:\n${dish.name}\nPrice: ${dish.price}`;
+    const text = `Hello, I want to order`;
     window.open(
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
       "_blank"
